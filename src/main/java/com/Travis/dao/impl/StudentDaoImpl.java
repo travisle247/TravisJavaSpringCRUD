@@ -3,6 +3,7 @@ import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.Travis.dao.StudentDao;
 import com.Travis.model.Student;
@@ -10,6 +11,7 @@ import com.Travis.model.Student;
 @Repository
 public class StudentDaoImpl implements StudentDao {
 
+	@Autowired
 	private SessionFactory session;
 	
 	@Override

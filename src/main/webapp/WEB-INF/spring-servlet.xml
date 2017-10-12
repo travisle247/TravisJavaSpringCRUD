@@ -32,9 +32,7 @@
 		<property name="configLocation">
 			<value>classpath:hibernate.cfg.xml</value>
 		</property>
-		<property name="configurationClass">
-			<value>org.hibernate.cfg.AnnotationConfiguration</value>
-		</property>
+		<property name="packagesToScan" value="com.Travis.model" />		
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
